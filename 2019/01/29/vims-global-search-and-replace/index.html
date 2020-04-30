@@ -5,18 +5,22 @@
   
 
   
-  <title>Archives | Rafael Trojanowski - Personal Site</title>
+  <title>Vim`s global search and replace | Rafael Trojanowski - Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I&#39;m remote Develper focused on building Web. I write Ruby, Javascript and Python.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rafael Trojanowski - Personal Site">
-<meta property="og:url" content="http://rafaltrojanowski.github.io/archives/index.html">
+  <meta name="description" content="I have been looking for efficient solution how to refractor code with Vim for a while,so I’d like to share it with you. That’s an extremely easy:  Search (Tool from Vim):  :Ack OldClassName **&#x2F;*.rb **">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim&#96;s global search and replace">
+<meta property="og:url" content="http://rafaltrojanowski.github.io/2019/01/29/vims-global-search-and-replace/index.html">
 <meta property="og:site_name" content="Rafael Trojanowski - Personal Site">
-<meta property="og:description" content="I&#39;m remote Develper focused on building Web. I write Ruby, Javascript and Python.">
+<meta property="og:description" content="I have been looking for efficient solution how to refractor code with Vim for a while,so I’d like to share it with you. That’s an extremely easy:  Search (Tool from Vim):  :Ack OldClassName **&#x2F;*.rb **">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-01-29T15:11:20.000Z">
+<meta property="article:modified_time" content="2020-04-30T13:20:53.937Z">
 <meta property="article:author" content="Rafał Trojanowski">
-<meta property="article:tag" content="ruby on rails developer">
-<meta property="article:tag" content=" rafal trojanowski">
+<meta property="article:tag" content="vim">
+<meta property="article:tag" content=" editor">
+<meta property="article:tag" content=" development">
+<meta property="article:tag" content=" programming">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Rafael Trojanowski - Personal Site" type="application/atom+xml">
@@ -70,203 +74,78 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/04/30/surround-lines-with-quotes/" class="archive-article-date">
-  <time datetime="2020-04-30T13:20:54.024Z" itemprop="datePublished">Apr 30</time>
+        <section id="main"><article id="post-vims-global-search-and-replace" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/29/vims-global-search-and-replace/" class="article-date">
+  <time datetime="2019-01-29T15:11:20.000Z" itemprop="datePublished">2019-01-29</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/30/surround-lines-with-quotes/">Surround lines with quotes</a>
+    <h1 class="article-title" itemprop="name">
+      Vim`s global search and replace
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/01/29/vims-global-search-and-replace/" class="archive-article-date">
-  <time datetime="2019-01-29T15:11:20.000Z" itemprop="datePublished">Jan 29</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/01/29/vims-global-search-and-replace/">Vim`s global search and replace</a>
-    </h1>
-  
+        <p>I have been looking for efficient solution how to refractor code with Vim for a while,<br>so I’d like to share it with you. That’s an extremely easy:</p>
+<ol>
+<li>Search (<a href='https://github.com/mileszs/ack.vim' target="_blank" rel="noopener">Tool from Vim</a>):</li>
+</ol>
+<p><code>:Ack OldClassName **/*.rb **/*.rake</code></p>
+<ol start="2">
+<li>Apply changes on results (optional):</li>
+</ol>
+<p><code>:cdo g/OldClassName/s/OldClassName/NewClassName/ge</code></p>
+<ol start="3">
+<li>Update and save at once:</li>
+</ol>
+<p><code>:cdo %s/OldClassName/NewClassName/ge | update</code></p>
+<p>Big thanks to Sebastian for sharing this trick with me.</p>
+<p>Check out his blog post <a href='https://driggl.com/blog/a/should-you-start-using-vim' target="_blank" rel="noopener">Should You start using VIM?</a></p>
+<p>Big up!</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://rafaltrojanowski.github.io/2019/01/29/vims-global-search-and-replace/" data-id="ck9n1pwta000n15rp2wd8hq8b" class="article-share-link">Share</a>
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/12/04/ruby-array-conversion-function/" class="archive-article-date">
-  <time datetime="2018-12-04T09:39:23.000Z" itemprop="datePublished">Dec 4</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/04/ruby-array-conversion-function/">Use Array() to array-ify inputs in Ruby</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/development/" rel="tag">development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/" rel="tag">programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/10/21/ember-location/" class="archive-article-date">
-  <time datetime="2017-10-21T07:46:15.000Z" itemprop="datePublished">Oct 21</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/21/ember-location/">Redirect back with Ember.Location</a>
-    </h1>
+    <a href="/2020/04/30/surround-lines-with-quotes/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Surround lines with quotes
+        
+      </div>
+    </a>
   
+  
+    <a href="/2018/12/04/ruby-array-conversion-function/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Use Array() to array-ify inputs in Ruby</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/19/desing-fullscreen-search-interface-part-3/" class="archive-article-date">
-  <time datetime="2017-07-19T09:10:44.000Z" itemprop="datePublished">Jul 19</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/19/desing-fullscreen-search-interface-part-3/">Desing Fullscreen Search Interface With Ember - Part 3</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/17/desing-fullscreen-search-interface-part-2/" class="archive-article-date">
-  <time datetime="2017-07-17T10:47:17.000Z" itemprop="datePublished">Jul 17</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/17/desing-fullscreen-search-interface-part-2/">Desing Fullscreen Search Interface With Ember - Part 2</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/17/desing-fullscreen-search-interface/" class="archive-article-date">
-  <time datetime="2017-07-17T09:04:00.000Z" itemprop="datePublished">Jul 17</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/17/desing-fullscreen-search-interface/">Desing Fullscreen Search Interface With Ember - Part 1</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/16/project-git-author/" class="archive-article-date">
-  <time datetime="2017-07-16T15:45:52.000Z" itemprop="datePublished">Jul 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/16/project-git-author/">Project Specific Git Author</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
 
 </section>
         
