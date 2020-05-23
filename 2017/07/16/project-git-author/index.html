@@ -28,7 +28,7 @@ ga('send', 'pageview');
 <meta property="og:description" content="Have you ever wondered how to manage two or more Github accounts on your machine? If so, that must be something for you. Project specific git authorLet’s assume we want to manage James Bond’s accounts">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-07-16T15:45:52.000Z">
-<meta property="article:modified_time" content="2020-04-30T13:20:53.993Z">
+<meta property="article:modified_time" content="2020-05-23T15:31:00.239Z">
 <meta property="article:author" content="Rafał Trojanowski">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content=" tricks">
@@ -131,10 +131,10 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_AUTHOR_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_AUTHOR_NAME&#x3D;&quot;James Bond&quot;; export GIT_AUTHOR_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
 
 <p>Then we have to push changes with force option:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -f origin branchname</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -f origin branch_name</span><br></pre></td></tr></table></figure>
 
-<p>Unfortunetelly, that’s not all. If we are using Github, we will most likely see something annoying. Commits would be marked with two avatars, and we would see something like “user a” commited with “user b”.<br>So, we should also take care of setting committer name similarly as we did before.</p>
-<p>That could be achived by:</p>
+<p>Unfortunetelly, that’s not all. If we are using Github, we will most likely see something annoying. Commits would be marked with two avatars, and we would see something like “user a” committed with “user b”.<br>So, we should also take care of setting committer name similarly as we did before.</p>
+<p>That could be achieved by:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_COMMITTER_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_COMMITTER_NAME&#x3D;&quot;James Bond&quot;; export GIT_COMMITTER_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
 
 <p>These commands are quite difficult to remember though, so I would suggest to put them into your <code>~/.aliases</code>:</p>

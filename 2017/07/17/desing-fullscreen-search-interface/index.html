@@ -20,15 +20,15 @@ ga('send', 'pageview');
   
   <title>Desing Fullscreen Search Interface With Ember - Part 1 | Rafal Trojanowski - Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MotivationSome time ago I had been working on a search feature. The UI was designed in a fullscreen page.As hiding nabvar and footer or providing separate layout was tricky and not intuitive I decided">
+  <meta name="description" content="MotivationSome time ago I had been working on a search feature. The UI was designed on a fullscreen page.As hiding navbar and footer or providing separate layout was tricky and not intuitive I decided">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Desing Fullscreen Search Interface With Ember - Part 1">
 <meta property="og:url" content="http://rafaltrojanowski.github.io/2017/07/17/desing-fullscreen-search-interface/index.html">
 <meta property="og:site_name" content="Rafal Trojanowski - Personal Site">
-<meta property="og:description" content="MotivationSome time ago I had been working on a search feature. The UI was designed in a fullscreen page.As hiding nabvar and footer or providing separate layout was tricky and not intuitive I decided">
+<meta property="og:description" content="MotivationSome time ago I had been working on a search feature. The UI was designed on a fullscreen page.As hiding navbar and footer or providing separate layout was tricky and not intuitive I decided">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-07-17T09:04:00.000Z">
-<meta property="article:modified_time" content="2020-04-30T13:20:53.984Z">
+<meta property="article:modified_time" content="2020-05-23T15:31:00.236Z">
 <meta property="article:author" content="Rafał Trojanowski">
 <meta property="article:tag" content="ruby on rails developer">
 <meta property="article:tag" content=" ruby on rails expert">
@@ -108,27 +108,27 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Some time ago I had been working on a search feature. The UI was designed in a fullscreen page.<br>As hiding nabvar and footer or providing separate layout was tricky and not intuitive I decided to use fullscreen modal dialog.</p>
+        <h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Some time ago I had been working on a search feature. The UI was designed on a fullscreen page.<br>As hiding navbar and footer or providing separate layout was tricky and not intuitive I decided to use fullscreen modal dialog.</p>
 <p>Generally, modal dialogs have become a ubiquitous feature of mobile web design, but designers need to put more thought into when to use them, and when to leave them.<br>You can read more here: <a href="https://uxmag.com/articles/modals-on-mobile-how-to-use-them-wisely" target="_blank" rel="noopener">https://uxmag.com/articles/modals-on-mobile-how-to-use-them-wisely</a></p>
-<p>By the way, you would ask why designer planned interface as a full page view?</p>
+<p>By the way, you would ask why the designer planned interface as a full-page view?</p>
 <p>From the usability perspective modal rendered in fullscreen have a few advantages:</p>
 <ul>
-<li>it keeps user focus only on particular task. We don’t want to distract the user with the content “behind” the modal</li>
+<li>it keeps users focus only on a particular task. We don’t want to distract the user with the content “behind” the modal</li>
 <li>it will work on mobile devices as modal size will adapt to every screen size</li>
 <li>there are opinions that fullscreen modals look better and cleaner</li>
 </ul>
 <p>Summing up requirements are as following:</p>
 <ul>
-<li>Implement modal dialog responsible for data seaching;</li>
+<li>Implement modal dialog responsible for data searching;</li>
 <li>Render modal dialog in fullscreen;</li>
 <li>Modal dialog should be accessible from everywhere in the application;</li>
-<li>It should be possible to close search modal dialog and bring back user to the home view.</li>
+<li>It should be possible to close search modal dialog and bring back the user to the home view.</li>
 </ul>
 <p>We need to keep in mind a few things:</p>
 <ul>
 <li>Users will hit the back button in the browser when modal is opened;</li>
 <li>Process of loading data asynchronously should be done in “background”, we want to show render modal smoothly</li>
-<li>URL should store state. Thanks to this, it will work nicely with user refreshes the page.</li>
+<li>URL should store the state. Thanks to this, it will work nicely with the user refreshes the page.</li>
 <li>We want to stick to Ember convention (route based model fetching) to prevent problems in future ***</li>
 </ul>
 <p>*** New stuff, must check it out:</p>
@@ -148,7 +148,7 @@ ga('send', 'pageview');
 <p><code>app/templates/search.hbs</code></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Search Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>It works, but it’s just simple page.<br>There is a great addon for modals dialogs, it also allows to use routable approach! Excellent!<br>So let’s add it to our <code>package.json</code> by running:</p>
+<p>It works, but it’s just a simple page.<br>There is a great addon for modals dialogs, it also allows us to use a routable approach! Excellent!<br>So let’s add it to our <code>package.json</code> by running:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ember install ember-modal-dialog</span><br></pre></td></tr></table></figure>
 
 <p><code>app/styles/app.scss</code></p>
@@ -160,23 +160,23 @@ ga('send', 'pageview');
 <p>Now, let’s modify our test a little:</p>
 <p><code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">test(<span class="string">'click on search link opens modal dialog'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  visit(<span class="string">'/'</span>);</span><br><span class="line">  click(<span class="string">'.navigation a#search'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      assert.equal(currentURL(), <span class="string">'/search'</span>);</span><br><span class="line">      assert.equal(find(<span class="string">'.ember-modal-dialog h2'</span>).text(), <span class="string">'Fullscreen Search Page'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>It’s much better, we have the king of routable modal.<br>Hovewer, this need to be done to display it in fullscreen:</p>
+<p>It’s much better, we have the king of the routable modal.<br>However, this needs to be done to display it in fullscreen:</p>
 <p><code>app/components/full-screen-modal-dialog.coffee</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ModalDialog <span class="keyword">from</span> <span class="string">'ember-modal-dialog/components/modal-dialog.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> ModalDialog.extend(</span><br><span class="line">  containerClassNames: <span class="string">"full-screen-modal"</span>,</span><br><span class="line">  targetAttachment: <span class="string">"none"</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
 <p><code>app/styles/app.scss</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.full-screen-modal</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>And finally in our template we do small change:</p>
+<p>And finally, in our template we do small change:</p>
 <p><code>app/templates/search.hbs</code></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;#full-screen-modal-dialog&#125;&#125;</span><br><span class="line">  Fullscreen Screen Page </span><br><span class="line">&#123;&#123;/full-screen-modal-dialog&#125;&#125;</span><br></pre></td></tr></table></figure>
 
-<p>Let’s say, now we have fullscreen modal and some acceptnace tests, which we can simply runned in a browser by:</p>
+<p>Let’s say, now we have fullscreen modal and some acceptance tests, which we can simply run in a browser by:</p>
 <p><code>$ ember test --server --filter=&quot;search&quot;</code></p>
 <ul>
-<li>where <code>search</code> need to be the module name or test name.</li>
+<li>where <code>search</code> needs to be the module name or test name.</li>
 </ul>
-<p>That’s first step. In the next post we will focus on extend functionality by building search form and list items using Ember components. We will provide some virtual backend to make it behaves as a real app.</p>
+<p>That’s the first step. In the next post we will focus on extending functionality by building search form and list items using Ember components. We will provide some virtual backend to make it behaves like a real app.</p>
 <p>Stay tuned!</p>
 
       
