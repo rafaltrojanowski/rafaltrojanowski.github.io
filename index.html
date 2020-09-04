@@ -146,6 +146,66 @@ ga('send', 'pageview');
 
 
   
+    <article id="post-python-django-as-my-next-framework" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/05/python-django-as-my-next-framework/" class="article-date">
+  <time datetime="2020-04-05T15:45:52.000Z" itemprop="datePublished">2020-04-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/05/python-django-as-my-next-framework/">Python/Django as a interesting alternative for Ruby on Rails</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Python-Django-My-first-impressions"><a href="#Python-Django-My-first-impressions" class="headerlink" title="Python Django - My first impressions"></a>Python Django - My first impressions</h3><p>Recently I used Django for a weekend project. Django is getting more and more popularity for Web Development these days.<br>Thanks to the fact that Python is easy to learn and multi purpose language (Web Scrapping, Web Development and Artificial Inteligence)<br>and was used by Google for scrapping a sites and then indexing them it’s definietly worth to have look at it, if you haven’t tried it yet.</p>
+<p>Here are my findings.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Installation is process is smooth. After instalations project structure looks minimalistic, which is cool.<br>The running server is really fast and there is no magic (if you have ever used spring, you may know what I mean).</p>
+<h2 id="Admin-Dashboard"><a href="#Admin-Dashboard" class="headerlink" title="Admin Dashboard"></a>Admin Dashboard</h2><p>The choice what to use for Dashboard for db managment is quite obvious,<br>django-admin, so far pretty nice experience. I’m not going to do many customizations by the way.</p>
+<p>Another thing that I love is how easy is data seeding. It literralyu takes seconds. You just need to run one command<br>and voila:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command here!</span><br></pre></td></tr></table></figure>
+
+<p>Django is very inteligent framework. I saw heading “Framework for perfectionsist with a deadline”, which<br>sounds like nice slogan.</p>
+<p>So what’s smart is the fact that when you generate admin account by this command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">it will prompt if you choose a weak password. I was impressed.</span><br><span class="line"></span><br><span class="line"># Code organization</span><br><span class="line"></span><br><span class="line">Apps and more flexibility how you organize your routing.</span><br><span class="line"></span><br><span class="line">## Migrations management</span><br><span class="line"></span><br><span class="line">I&#39;m still not an expert here but generally its fully automated so after every change in your model, you just need to run</span><br></pre></td></tr></table></figure>
+<p>makemigrations</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">and then</span><br></pre></td></tr></table></figure>
+<p>migrate<br>``</p>
+<p>and that’s all!</p>
+<p>The problems occurs when you have null false column and already existing data, but command line will<br>ask you what to do in that case, set default or … It looks like very developer friendly experience.</p>
+<h2 id="Forms"><a href="#Forms" class="headerlink" title="Forms"></a>Forms</h2><p>Form object generation is nice and docs describe the process well.<br>The only issues that I spoted were related to adding custom css classes and placeholders for inputs<br>but I easliy found and addon that handles this case.</p>
+<h2 id="Image-upload"><a href="#Image-upload" class="headerlink" title="Image upload."></a>Image upload.</h2><p>It’s easy thanks to build in Image field. No additiuonal solutions needed for that common feature.<br>The problematice part is that you need to incliude it to static files to don’t get 404</p>
+<h2 id="Online-Resources"><a href="#Online-Resources" class="headerlink" title="Online Resources"></a>Online Resources</h2><p>I sued this tutorial to get familiar with the concepts: link<br>Suprisingly for reslolveing an issues i havent’ used popular Stack Overflow, because<br>I found it easier to use some video tutorials that I found on Youtube.</p>
+<h2 id="Difficulties"><a href="#Difficulties" class="headerlink" title="Difficulties"></a>Difficulties</h2><p>Assets management</p>
+<p>While adding a bulma frameworks was easy I struggled a bit to add custom css and font awesome icons,<br>so I cant tell more about it now, but I would like to update it when I resolve this issues.</p>
+<p>Blank vs Null?<br>How to get rid of default values for not null columns?</p>
+<p>Project is 80% done and can be accessed here:</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://rafaltrojanowski.github.io/2020/04/05/python-django-as-my-next-framework/" data-id="ckeo9hw2n0000d6rp6sfwai0i" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-django/" rel="tag">python django</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-development/" rel="tag">web development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-framework/" rel="tag">web framework</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-vims-global-search-and-replace" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/29/vims-global-search-and-replace/" class="article-date">
@@ -200,6 +260,87 @@ ga('send', 'pageview');
 
 
   
+    <article id="post-why-i-switched-to-nvim-in-2020" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/29/why-i-switched-to-nvim-in-2020/" class="article-date">
+  <time datetime="2019-01-29T15:11:20.000Z" itemprop="datePublished">2019-01-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/29/why-i-switched-to-nvim-in-2020/">Why I switched to nvim in 2020</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Recently I’ve been jumping between VSCode and Vim8 to write my code. My last try of nvim wasn’t successful. since I’ve<br>found that one of my mates shared his config on Github I want to give it yet another try.</p>
+<p>For editor, I look for the key things for me are: Usability, Speed and Minimalism.</p>
+<p>As the first impression is important, I can 100% sure say that I like what I see. Font size, colorscheme<br>and navigation looks exactly like it used to be with oldie Vim, but better :)</p>
+<p>I will try to complete this post using nvim, which from the beginning does not seems easy</p>
+<p>and now everything works as expected!</p>
+<p>What I got?<br>rubocop checker, yay!</p>
+<p>What I lost?<br>I was obsesively using jj to navigate. I lost it but thanks to that I can develop a new habit</p>
+<p>Customizations:</p>
+<ul>
+<li>missing leader p to go back to the last openned buffer / file</li>
+</ul>
+<p>Troubleshooting:</p>
+<p>broken NerdTree</p>
+<p>Summary</p>
+<p>Summing up switch gives me a more efficient workflow, and that was also great that I have got a nice config, that<br>after litte adjustments will work as I want!</p>
+<p>Ctrl-P behaves a little bit differently but I dont want to change it as it will force me to use leader key more often</p>
+<p>Here you can find a config:</p>
+<ul>
+<li>(link)</li>
+</ul>
+<p>These that I had to learn:<br>Navigation:</p>
+<p>[Control][b] - Move back one full screen<br>[Control][f] - Move forward one full screen<br>[Control][d] - Move forward 1/2 screen<br>[Control][u] - Move back (up) 1/2 screen</p>
+<p>I used tab for moving a block of the code, so whats now?</p>
+<p>Press &gt; to indent (shift text one ‘ shiftwidth ‘ to the right), or press &lt; to shift left.<br>Press . to repeat the indent, or u to undo if you have shifted too far.</p>
+<p>leader-p to jump to previously opened file</p>
+<p>map <leader>p :call PrevBuffer()<CR></p>
+<ul>
+<li>autocomplete</li>
+</ul>
+<ul>
+<li><p>cursor change!</p>
+</li>
+<li><p>allow to save on capital letters ie :W</p>
+</li>
+</ul>
+<p>Then navidation in iTerm like vim </p>
+<p>NExt Tab<br>Prev Tab<br>Next Pane<br>Prev Pane</p>
+<p>Autocompletion.</p>
+<p>Previously I have been using… </p>
+<p>Now in the config I have found YouCompleteMe</p>
+<p>Opening files Is slower comparing to my last Vim8 setup, and need to be solved to make using it fun.</p>
+<p>, p is that control P? Now it’s a bit hard to move up down as ctrl j and h does not work need to use<br>arrows</p>
+<p>opening files is very slow like it takes a 3 seconds, so need to do binary search to figure it out.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://rafaltrojanowski.github.io/2019/01/29/why-i-switched-to-nvim-in-2020/" data-id="ckeo9hw2u0001d6rpgpmy9wmk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/neovim/" rel="tag">neovim</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvim/" rel="tag">nvim</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-ruby-array-conversion-function" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/04/ruby-array-conversion-function/" class="article-date">
@@ -224,7 +365,7 @@ ga('send', 'pageview');
       
         <p><strong>Kernel#Array</strong> takes an argument and tries very hard to convert it into an <strong>Array</strong>.</p>
 <p>Let’s look at some examples:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])                 <span class="comment"># =&gt; [1,2,3]</span></span><br><span class="line">Array([])                      <span class="comment"># =&gt; []</span></span><br><span class="line">Array(<span class="literal">nil</span>)                     <span class="comment"># =&gt; []</span></span><br><span class="line">Array(&#123;<span class="symbol">:a</span> =&gt; <span class="number">1</span>, <span class="symbol">:b</span> =&gt; <span class="number">2</span>&#125;)SA    <span class="comment"># =&gt; [[:a, 1], [:b, 2]]</span></span><br><span class="line">Array(<span class="number">1</span>..<span class="number">5</span>)                    <span class="comment"># =&gt; [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])                 <span class="comment"># =&gt; [1,2,3]</span></span><br><span class="line">Array([])                      <span class="comment"># =&gt; []</span></span><br><span class="line">Array(<span class="literal">nil</span>)                     <span class="comment"># =&gt; []</span></span><br><span class="line">Array(&#123;<span class="symbol">:a</span> =&gt; <span class="number">1</span>, <span class="symbol">:b</span> =&gt; <span class="number">2</span>&#125;)      <span class="comment"># =&gt; [[:a, 1], [:b, 2]]</span></span><br><span class="line">Array(<span class="number">1</span>..<span class="number">5</span>)                    <span class="comment"># =&gt; [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
 
 <p>Using <strong>Kernel#Array</strong> can lead to very forgiving APIs.</p>
 <p>Consider following method:</p>
@@ -275,36 +416,35 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>In the approach with routable modal described in previous posts, there is one drawback. Closing link located in the modal needs to be handled with additional logic if we want to achieve the same effect when we don’t use a routable approach. In the routable approach we open modal for a specific route so close action needs to make a redirect to the previous route from the history.</p>
-<p>We can handle closing modal by simple link-to pointing to the main application route. </p>
+        <h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>In the approach with routable modal described in previous posts, there is one drawback. Closing link located in the modal need to be handled with additional logic if we want to achieve the same effect when we don’t use routable approach. In routable approach we open modal for a specific route so close action need to make a redirect to the previous route from the history.</p>
+<p>Basically we can handle closing modal by simple link-to pointing to the main application route. </p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;#full-screen-modal-dialog&#125;&#125;</span><br><span class="line">  &#123;&#123;#link-to "application"&#125;&#125;Close&#123;&#123;/link-to&#125;&#125;</span><br><span class="line">&#123;&#123;/full-screen-modal-dialog&#125;&#125;</span><br></pre></td></tr></table></figure>
 
-<p>But what when we want to redirect the user to the previous view, similarly like when the user clicks on the back button in the browser?</p>
-<p>There is a problem with how to track the history of visited routes. I was researching a long time and found a few solutions:</p>
+<p>But what when we want to redirect user to the previouse view, similarly like when user click on back button in the browser?</p>
+<p>There is a problem how to track history of visited routes. I was researching a long time and found a few solutions:</p>
 <ol>
-<li><p>Use dedicated add-ons:</p>
+<li><p>Use deditated add-ons:</p>
 <ul>
 <li><code>ember-cli-history-mixin</code></li>
 <li><code>ember-route-history</code></li>
 </ul>
-<p>Disadvantage: Seems to be not maintained and problems with recording the history of nested routes. Generally fetching ids from the router object is hard.</p>
+<p>Disadvantage: Seems to be not maintaned and problems with recording history of nested routes. Generally fetching ids from the router object is hard.</p>
 </li>
 <li><p>Use <code>window.history.back()</code></p>
+<p>That looks fine, but doesn’t work the same way in all browsers. Also, it would redirect user outside the app.</p>
+</li>
+<li><p>Some code snippets on Stackoverflow which hacks router to extract previouse route state.</p>
+<p>Code seems quite complicated and hacky.</p>
 </li>
 </ol>
-<p>That looks fine but doesn’t work the same way in all browsers. Also, it would redirect the user outside the app.</p>
-<ol start="3">
-<li>Some code snippets on Stackoverflow which hacks router to extract previous route state.</li>
-</ol>
-<p>The code seems quite complicated and hacky.</p>
-<p>Finally, I chose a solution on this blog: <a href="http://kiprosh.com/blog/ember-js-how-to-track-last-visited-route" target="_blank" rel="noopener">http://kiprosh.com/blog/ember-js-how-to-track-last-visited-route</a></p>
+<p>Finally I chose solution on this blog: <a href="http://kiprosh.com/blog/ember-js-how-to-track-last-visited-route" target="_blank" rel="noopener">http://kiprosh.com/blog/ember-js-how-to-track-last-visited-route</a></p>
 <p>Although, it wasn’t perfect, because it still didn’t work with nested routes.</p>
-<p>On the occasion, I approached it with TDD believing that I will discover something new.</p>
+<p>On the occassion, I approached it with TDD beliving that I will discover something new.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'click on close redirects back to the previous route from nested routes'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  server.createList(<span class="string">'note'</span>, <span class="number">1</span>);</span><br><span class="line">  server.createList(<span class="string">'comment'</span>, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">  visit(<span class="string">'/note/1/comment/1'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/note/1/comment/1'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  click(<span class="string">'a#search'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/search'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  click(<span class="string">'a.search-close'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/note/1/comment/1'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>…and started debugging and looking at router object, to retrieve some info current route path.</p>
-<p>Happily, I found something new - <code>router.location.path</code> which stores the string. I was surprised. It looks like something new in Ember and doesn’t need to hack it to make a transition back.</p>
-<p>So updated recording last visited route in beforeModel hook:</p>
+<p>Happily, I found something new - <code>router.location.path</code> which stores the string. I was suprised. It looks like something new in Ember and don’t need to hack it to make a transition back.</p>
+<p>So updated recording last visted route in beforeModel hook:</p>
 <p><code>routes/search.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Route.extend(&#123;</span><br><span class="line"></span><br><span class="line">  beforeModel() &#123;</span><br><span class="line">    <span class="keyword">let</span> previousRoutes = <span class="keyword">this</span>.router.router.currentHandlerInfos;</span><br><span class="line">    <span class="keyword">let</span> previousRoute = previousRoutes &amp;&amp; previousRoutes.pop();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (previousRoute &amp;&amp; previousRoute.name !== <span class="string">'search'</span>) &#123;</span><br><span class="line">      localStorage[<span class="string">'lastVisitedRoute'</span>] = previousRoute.name;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// use location path to store last visited route</span></span><br><span class="line">      localStorage[<span class="string">'lastVisitedRoutePath'</span>] = <span class="keyword">this</span>.router.location.path;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -314,20 +454,21 @@ ga('send', 'pageview');
 <p><code>controllers/search.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Controller.extend(&#123;</span><br><span class="line">  actions: &#123;</span><br><span class="line">    close() &#123;</span><br><span class="line">      <span class="keyword">let</span> lastVisitedRoute = localStorage[<span class="string">'lastVisitedRoutePath'</span>] || <span class="string">"index"</span>;</span><br><span class="line">      <span class="keyword">this</span>.transitionToRoute(lastVisitedRoutePath);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>I was happy that I finally found a solution to the problem I was struggling for a long time. However I discovered something unexpected when I tested the app manually!! That didn’t work. Again using debugger I investigated that path is undefined and the router has a problem with transition. Say what!? The tests are green.</p>
+<p>I was happy that I finally found solution for problem I was struggling long time. However I discovered something unexpected when I tested app manually!! That didn’t work. Again using debugger I investigated that path is undefined and router has problem with transition. Say what!? Tests are green.</p>
 <h2 id="Ember-Location-API"><a href="#Ember-Location-API" class="headerlink" title="Ember.Location API"></a>Ember.Location API</h2><p>I learned that Ember uses different strategies for routing location in test and development mode by default. You can see it when you look at <code>config/environment.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">environment</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> ENV = &#123;</span><br><span class="line">    <span class="comment">// (...)</span></span><br><span class="line">    locationType: <span class="string">'auto'</span>,</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// (...)</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (environment === <span class="string">'test'</span>) &#123;</span><br><span class="line">    <span class="comment">// Testem prefers this...</span></span><br><span class="line">    ENV.locationType = <span class="string">'none'</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// (...)</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<p>Started digging in the docs (<a href="https://www.emberjs.com/api/ember/2.14.1/namespaces/Ember.Location" target="_blank" rel="noopener">https://www.emberjs.com/api/ember/2.14.1/namespaces/Ember.Location</a>) and source code to find more.</p>
-<p>Generally, 4 types of location can be used by Ember:</p>
-<h3 id="Ember-NoneLocation"><a href="#Ember-NoneLocation" class="headerlink" title="Ember.NoneLocation"></a>Ember.NoneLocation</h3><p>It’s used in tests. That makes sense because when test is running there is URL like:<br>I switched to this type in the development and then <code>router.location.path</code> was again accessible and redirection worked as expected. But URL was blank all the time, so I had to give up this solution.</p>
-<p>That type could be also usable when you embed your Ember application on a larger page.</p>
-<h3 id="Ember-HashLocation"><a href="#Ember-HashLocation" class="headerlink" title="Ember.HashLocation"></a>Ember.HashLocation</h3><p>This is the default. The characteristic thing is that it adds # on the beginning of the path in the URL.<br>I noticed that in the code introduced <code>router.location.lastSetPath</code> which sounds familiar and contains the same string with a full path like <code>router.location.path</code> in Ember.NoneLocation.</p>
-<p>Note: the value is set only when a transition is performed by a router. In other words it won’t work on copy-paste an URL and hit Enter.</p>
+<p>Started diggin in the docs (<a href="https://www.emberjs.com/api/ember/2.14.1/namespaces/Ember.Location" target="_blank" rel="noopener">https://www.emberjs.com/api/ember/2.14.1/namespaces/Ember.Location</a>) and source code to find more.</p>
+<p>Generally, there are 4 types of location that can be used by Ember:</p>
+<h3 id="Ember-NoneLocation"><a href="#Ember-NoneLocation" class="headerlink" title="Ember.NoneLocation"></a>Ember.NoneLocation</h3><p>It’s used in tests. That makes sense because when test are running there is url like:<br>I switched to this type in the development and then <code>router.location.path</code> was again accessible and redirection worked as expected. But url was blank all the time, so I had to gave up this solution.</p>
+<p>That type could be also usable when you embeed your Ember application in a larger page.</p>
+<h3 id="Ember-HashLocation"><a href="#Ember-HashLocation" class="headerlink" title="Ember.HashLocation"></a>Ember.HashLocation</h3><p>This is default. The characteristic thing is that it adds # on the the begining of path in the url.<br>I noticed that in the code introduced <code>router.location.lastSetPath</code> which sounds familiar and contains the same string with full path like <code>router.location.path</code> in Ember.NoneLocation.</p>
+<p>Note: the value is set only when transition is performed by router. In other words it won’t work on copy paste an url and hit Enter.</p>
 <h3 id="Ember-HistoryLocation"><a href="#Ember-HistoryLocation" class="headerlink" title="Ember.HistoryLocation"></a>Ember.HistoryLocation</h3><p>Using HistoryLocation results in URLs that are indistinguishable from a standard URL. This relies upon the browser’s history API.</p>
 <h3 id="Ember-AutoLocation"><a href="#Ember-AutoLocation" class="headerlink" title="Ember.AutoLocation"></a>Ember.AutoLocation</h3><p>Using AutoLocation, the router will use the best Location class supported by the browser it is running in.</p>
 <h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>I resolved this problem by removing acceptance tests temporarily and in development / production - use hash location combined with storing last visited route like here:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localStorage[<span class="string">'lastVisitedRoutePath'</span>] = <span class="keyword">this</span>.router.location.lastSetPath;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -366,16 +507,16 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Recently I was using tripadvisor.com and I noticed that this application also uses fullscreen modals dialogs for displaying data dynamically. What’s was interesting, I discovered a different approach to make rendering modal effect smooth.</p>
-<p>There is a kind of sub-screen with a fullscreen loader. I have fallen in love with that experience so I will reimplement it with Ember…</p>
+        <p>Recently I was using tripadvisor.com and I noticed that this application also uses fullscreen modals dialogs for displaying data dynamically. What’s was interesting, I discovered totally different approach to make rendering modal effect smooth.</p>
+<p>There is a kind of subscreen with fullscreen loader. I have fallen in love with that experience so I will reimplement it with Ember…</p>
 <p>UPDATE: Please check this approach, seems that’s the new Ember way how to deal with it and deliver great UX: <a href="https://emberway.io/skeleton-screen-loading-in-ember-js-2f7ac2384d63" target="_blank" rel="noopener">https://emberway.io/skeleton-screen-loading-in-ember-js-2f7ac2384d63</a></p>
-<p>Anyway, in part 2 we finished with kind of loader placed within fullscreen modal content. It was just raw text, but the thing is that we can use fullscreen loader as Tripadvisor does!</p>
+<p>Anyway, in part 2 we finished with kind of loader placed within fullscreen modal content. In fact, it was just raw text, but the thing is that we can use fullscreen loader like Tripadvisor does!</p>
 <p><img src="/images/search-part-3.gif" alt=""></p>
-<p>That’s easy thanks to the routable approach we choose and ember built-in loading substates.<br>Router code is extremely simple now:</p>
+<p>That’s easy thanks to routable approach we choose and ember built in loading substates.<br>Router code is extremally simple now:</p>
 <p><code>/app/routes/search.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Route.extend(&#123;</span><br><span class="line"></span><br><span class="line">  queryParams: &#123;</span><br><span class="line">    query: &#123;</span><br><span class="line">      refreshModel: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  model(params) &#123;</span><br><span class="line">    <span class="keyword">let</span> q = params.query;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (q) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.store.query(<span class="string">'note'</span>, &#123; <span class="attr">title</span>: q &#125;);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.store.findAll(<span class="string">'note'</span>, &#123; <span class="attr">reload</span>: <span class="literal">true</span> &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>Time for styling to make loader beautiful.</p>
+<p>Time for styling to make loader beaufiful.</p>
 <p><code>app/styles/app.scss</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.loading</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>; <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>; <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.loader</span> &#123;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">4em</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">border</span>: .<span class="number">8em</span> solid <span class="built_in">rgba</span>(<span class="number">218</span>, <span class="number">219</span>, <span class="number">223</span>, <span class="number">1</span>);</span><br><span class="line">  <span class="attribute">border-left</span>: .<span class="number">8em</span> solid <span class="built_in">rgba</span>(<span class="number">58</span>, <span class="number">166</span>, <span class="number">165</span>, <span class="number">1</span>);</span><br><span class="line">  <span class="attribute">animation</span>: spin <span class="number">1.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.loader</span>, <span class="selector-class">.loader</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">8em</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">8em</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: -<span class="number">4.05em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> spin &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">360deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">0deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -385,7 +526,7 @@ ga('send', 'pageview');
 
 <p>Yeah, we are reusing here our full-screen-modal-dialog again.</p>
 <p>That’s pretty cool, with just a few lines of code!</p>
-<p>I hope you enjoyed it!</p>
+<p>Hope you enjoyed!</p>
 
       
     </div>
@@ -422,8 +563,8 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>In the first part we prepared a routable modal for the search interface.<br>Now it’s time to allow a user to interact with that modal and query backend.</p>
-<h2 id="Add-search-form-component"><a href="#Add-search-form-component" class="headerlink" title="Add search form component"></a>Add search form component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ember generate component search-form</span><br></pre></td></tr></table></figure>
+        <p>In the first part we prepared routable modal for search interface.<br>Not it’s time to allow user interact with that modal and query backend.</p>
+<h2 id="Add-search-form-component"><a href="#Add-search-form-component" class="headerlink" title="Add search form component"></a>Add search form component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ember generate compoonent search-form</span><br></pre></td></tr></table></figure>
 
 <p><code>app/components/search-form.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Component.extend(&#123;&#125;);</span><br></pre></td></tr></table></figure>
@@ -437,7 +578,7 @@ ga('send', 'pageview');
 <p><code>tests/integration/components/search-box-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; test, moduleForComponent &#125; <span class="keyword">from</span> <span class="string">'ember-qunit'</span>;</span><br><span class="line"><span class="keyword">import</span> hbs <span class="keyword">from</span> <span class="string">'htmlbars-inline-precompile'</span>;</span><br><span class="line"></span><br><span class="line">moduleForComponent(<span class="string">'search-box'</span>, <span class="string">'Integration | Component | search box'</span>, &#123;</span><br><span class="line">  integration: <span class="literal">true</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">test(<span class="string">'it renders'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  assert.expect(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.render(hbs <span class="string">`&#123;&#123;search-box&#125;&#125;`</span>);</span><br><span class="line"></span><br><span class="line">  assert.equal(<span class="keyword">this</span>.$(<span class="string">'h1'</span>).text().trim(), <span class="string">'Hello!'</span>);</span><br><span class="line">  assert.equal(<span class="keyword">this</span>.$(<span class="string">'p:first'</span>).text().trim(), <span class="string">"What are you searching for?"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>Now it’s time to make this component able to act.<br>We add an acceptance test first as it’s very easy to describe what we want to achieve.</p>
+<p>Now it’s time to make this component able to perform action.<br>We add acceptance test first as it’s very easy to describe what we want to achieve.</p>
 <p><code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'search by query'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  visit(<span class="string">'/search'</span>);</span><br><span class="line"></span><br><span class="line">  fillIn(<span class="string">'input.search-query'</span>, <span class="string">'watermelon'</span>);</span><br><span class="line">  click(<span class="string">'input.submit-button'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/search?query=watermelon'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -459,8 +600,8 @@ ga('send', 'pageview');
 <p><code>tests/integration/components/search-box-test.coffee</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'when clicks on submit'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  assert.expect(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.set(<span class="string">'query'</span>, <span class="string">"watermelon"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.set(<span class="string">'updateParams'</span>, () =&gt; &#123;</span><br><span class="line">    assert.ok(<span class="literal">true</span>);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.render(hbs <span class="string">`&#123;&#123;search-box query=query updateParams=(action updateParams)&#125;&#125;`</span>);</span><br><span class="line">  <span class="keyword">this</span>.$(<span class="string">'input.submit-button'</span>).click();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>So now we have a component that can communicate and pass a query to the router. But there is one bummer! When user types, URL changes instantly. We don’t want to send a query to the backend on each key down event though, so let’s fix it:</p>
-<p>Let’s rename the component property, and thanks to this propagate property changes only after submitting our form:</p>
+<p>So now whe have a component that is able to comunicate and pass query to the router. But there is one bummer! When user types, url changes instantly. We don’t want to send query to backend on each key down event though, so lets fix it:</p>
+<p>Let’s rename component property, and thanks to this propagate property changes only after submitting our form:</p>
 <p><code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'search by query do not modify url without submit'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  visit(<span class="string">'/search'</span>);</span><br><span class="line"></span><br><span class="line">  fillIn(<span class="string">'input.search-query'</span>, <span class="string">'wate'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/search'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -474,19 +615,19 @@ ga('send', 'pageview');
 <p><code>app/routes/search.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Route.extend(&#123;</span><br><span class="line">  queryParams: &#123;</span><br><span class="line">    query: &#123;</span><br><span class="line">      refreshModel: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  model(params) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.store.query(<span class="string">'note'</span>, &#123; <span class="attr">title</span>: params.query &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-<p>I will skip the rest of the code, now let’s focus on:</p>
+<p>I will skip the rest of the code, now lets focus on:</p>
 <h2 id="Mocking-backend"><a href="#Mocking-backend" class="headerlink" title="Mocking backend"></a>Mocking backend</h2><p>I know two reasonable approaches. Okay, technically there are three:</p>
 <ol>
 <li>hard-coded array of JavaScript objects in route`s model hook</li>
 <li>http-mock <a href="https://ember-cli.com/user-guide/#mocks-and-fixtures" target="_blank" rel="noopener">https://ember-cli.com/user-guide/#mocks-and-fixtures</a> (check this out too: <a href="https://www.npmjs.com/package/ember-cli-testem-http-mocks" target="_blank" rel="noopener">https://www.npmjs.com/package/ember-cli-testem-http-mocks</a>)</li>
 <li>using client-side mock server ember-cli-mirage (<a href="http://www.ember-cli-mirage.com/" target="_blank" rel="noopener">http://www.ember-cli-mirage.com/</a>)</li>
 </ol>
-<p>As the last one have a great opinion in the community we will choose it.<br>By the way, it could be used both for development and tests by default, while http-mock requires an additional addon to make it work in the test environment.</p>
+<p>As the last one have great opinion in the community we will choose it.<br>By the way, it could be used both for development and tests by default, while http-mock requires additional addon to make it work in the test environment.</p>
 <p>Our updated <code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'queries notes by title'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  server.createList(<span class="string">'note'</span>, <span class="number">10</span>) <span class="comment">// create records with mirage</span></span><br><span class="line">  visit(<span class="string">'/search'</span>);</span><br><span class="line"></span><br><span class="line">  fillIn(<span class="string">'input.search-query'</span>, <span class="string">'Note#5'</span>);</span><br><span class="line">  click(<span class="string">'input.submit-button'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(find(<span class="string">'ul.notes li'</span>).length, <span class="number">1</span>);</span><br><span class="line">    assert.equal(find(<span class="string">'ul.notes li:first'</span>).text(), <span class="string">"Note#5"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>Now time to make the test pass!</p>
-<p>Mirage provides powerful stuff, for example, database methods known from Rails world, for example:<br><code>http://www.ember-cli-mirage.com/docs/v0.3.x/database/#where</code><br>It will be really useful in our search feature!<br>By the way, I just found that it could be used to do super spicy things, check<br><a href="https://github.com/samselikoff/ember-cli-mirage/pull/379" target="_blank" rel="noopener">https://github.com/samselikoff/ember-cli-mirage/pull/379</a> for details.</p>
+<p>Now time to make test pass!</p>
+<p>Mirage provides powerfull stuff, for example database methods known from Rails world, for example:<br><code>http://www.ember-cli-mirage.com/docs/v0.3.x/database/#where</code><br>It will be really useful in our search feature!<br>By the way, I just found that it could be used to do super spicy things, check<br><a href="https://github.com/samselikoff/ember-cli-mirage/pull/379" target="_blank" rel="noopener">https://github.com/samselikoff/ember-cli-mirage/pull/379</a> for details.</p>
 <p>Let’s dive into code:</p>
 <p><code>mirage/factories/note.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Factory &#125; <span class="keyword">from</span> <span class="string">'ember-cli-mirage'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Factory.extend(&#123;</span><br><span class="line">  title(i) &#123; <span class="keyword">return</span> <span class="string">'Note#'</span> + i; &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -494,14 +635,14 @@ ga('send', 'pageview');
 <p><code>mirage/config.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.namespace = <span class="string">'/api'</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.get(<span class="string">'/notes/'</span>, (schema, request) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span>(request.queryParams.title === <span class="literal">undefined</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> schema.notes.all();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> schema.notes.where(&#123;<span class="attr">title</span>: request.queryParams.title&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="Improvements"><a href="#Improvements" class="headerlink" title="Improvements"></a>Improvements</h2><h3 id="Speed-up-rendering-the-modal"><a href="#Speed-up-rendering-the-modal" class="headerlink" title="Speed up rendering the modal"></a>Speed up rendering the modal</h3><p>There is also one thing that is not so good. Fetching all data in the model hook blocks the transition. So if there are no Notes in Ember store yet, it could take some time to show a modal filled with data. We want to show a modal smoothly.</p>
-<p>This video (<a href="https://www.youtube.com/watch?v=kPxiiAGMSzE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=kPxiiAGMSzE</a>) from EmberConf 2017 was an inspiration on how to solve this problem elegantly.<br>Check this out:</p>
+<h2 id="Improvements"><a href="#Improvements" class="headerlink" title="Improvements"></a>Improvements</h2><h3 id="Speed-up-rendering-the-modal"><a href="#Speed-up-rendering-the-modal" class="headerlink" title="Speed up rendering the modal"></a>Speed up rendering the modal</h3><p>There is also one thing that is not so good. Fetching all data in model hook blocks the transition. So if there are no Notes in Ember store yet, it could take some time to show an modal filled with data. We want to show modal smoothly.</p>
+<p>This video (<a href="https://www.youtube.com/watch?v=kPxiiAGMSzE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=kPxiiAGMSzE</a>) from EmberConf 2017 was inspiration how to solve this problem in a elegant way.<br>Check this out:</p>
 <p><code>app/routes/search.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Ember <span class="keyword">from</span> <span class="string">'ember'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Ember.Route.extend(&#123;</span><br><span class="line"></span><br><span class="line">  model() &#123;</span><br><span class="line">    Ember.run.schedule(<span class="string">'afterRender'</span>, <span class="keyword">this</span>, <span class="keyword">this</span>._fetchNotes);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  _fetchNotes() &#123;</span><br><span class="line">    <span class="keyword">let</span> &#123; controller, store &#125; = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">let</span> &#123; query &#125; = controller;</span><br><span class="line"></span><br><span class="line">    controller.set(<span class="string">'isLoading'</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (query) &#123;</span><br><span class="line">      store.query(<span class="string">'note'</span>, &#123; <span class="attr">title</span>: query &#125;)</span><br><span class="line">        .then(<span class="keyword">this</span>._loadNotes.bind(<span class="keyword">this</span>))</span><br><span class="line">        .finally(<span class="keyword">this</span>._done.bind(<span class="keyword">this</span>));</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      store.findAll(<span class="string">'note'</span>, &#123; <span class="attr">reload</span>: <span class="literal">true</span> &#125;)</span><br><span class="line">        .then(<span class="keyword">this</span>._loadNotes.bind(<span class="keyword">this</span>))</span><br><span class="line">        .finally(<span class="keyword">this</span>._done.bind(<span class="keyword">this</span>));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  _loadNotes(notes) &#123;</span><br><span class="line">    <span class="keyword">this</span>.controller.set(<span class="string">'model'</span>, notes);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  _done() &#123;</span><br><span class="line">    <span class="keyword">this</span>.controller.set(<span class="string">'isLoading'</span>, <span class="literal">false</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-<p>The thing is that we schedule fetching the notes after rendering a template:<br>(BTW loading text could be replaced with any nice spinner instead)</p>
+<p>The thing is that we shedule fetching the notes after rendering a template:<br>(BTW loading text could be replaced with any nice spinner instead)</p>
 <p><img src="/images/search-part-2.gif" alt=""></p>
-<p>As you can see even if a long list of notes is fetched, a modal dialog is opened immediately. That was not possible with the previous solution.</p>
+<p>As you can see even if long list of notes is fetched, modal dialog is opened immediately. That was not possible with previous solution.</p>
 <h3 id="Add-close-button-to-back-to-home-page"><a href="#Add-close-button-to-back-to-home-page" class="headerlink" title="Add close button to back to home page"></a>Add close button to back to home page</h3><p><code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">'close search modal'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  visit(<span class="string">'/search'</span>);</span><br><span class="line"></span><br><span class="line">  click(<span class="string">'a.search-close'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    assert.equal(currentURL(), <span class="string">'/'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -546,27 +687,27 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Some time ago I had been working on a search feature. The UI was designed on a fullscreen page.<br>As hiding navbar and footer or providing separate layout was tricky and not intuitive I decided to use fullscreen modal dialog.</p>
+        <h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Some time ago I had been working on a search feature. The UI was designed in a fullscreen page.<br>As hiding nabvar and footer or providing separate layout was tricky and not intuitive I decided to use fullscreen modal dialog.</p>
 <p>Generally, modal dialogs have become a ubiquitous feature of mobile web design, but designers need to put more thought into when to use them, and when to leave them.<br>You can read more here: <a href="https://uxmag.com/articles/modals-on-mobile-how-to-use-them-wisely" target="_blank" rel="noopener">https://uxmag.com/articles/modals-on-mobile-how-to-use-them-wisely</a></p>
-<p>By the way, you would ask why the designer planned interface as a full-page view?</p>
+<p>By the way, you would ask why designer planned interface as a full page view?</p>
 <p>From the usability perspective modal rendered in fullscreen have a few advantages:</p>
 <ul>
-<li>it keeps users focus only on a particular task. We don’t want to distract the user with the content “behind” the modal</li>
+<li>it keeps user focus only on particular task. We don’t want to distract the user with the content “behind” the modal</li>
 <li>it will work on mobile devices as modal size will adapt to every screen size</li>
 <li>there are opinions that fullscreen modals look better and cleaner</li>
 </ul>
 <p>Summing up requirements are as following:</p>
 <ul>
-<li>Implement modal dialog responsible for data searching;</li>
+<li>Implement modal dialog responsible for data seaching;</li>
 <li>Render modal dialog in fullscreen;</li>
 <li>Modal dialog should be accessible from everywhere in the application;</li>
-<li>It should be possible to close search modal dialog and bring back the user to the home view.</li>
+<li>It should be possible to close search modal dialog and bring back user to the home view.</li>
 </ul>
 <p>We need to keep in mind a few things:</p>
 <ul>
 <li>Users will hit the back button in the browser when modal is opened;</li>
 <li>Process of loading data asynchronously should be done in “background”, we want to show render modal smoothly</li>
-<li>URL should store the state. Thanks to this, it will work nicely with the user refreshes the page.</li>
+<li>URL should store state. Thanks to this, it will work nicely with user refreshes the page.</li>
 <li>We want to stick to Ember convention (route based model fetching) to prevent problems in future ***</li>
 </ul>
 <p>*** New stuff, must check it out:</p>
@@ -586,7 +727,7 @@ ga('send', 'pageview');
 <p><code>app/templates/search.hbs</code></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Search Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>It works, but it’s just a simple page.<br>There is a great addon for modals dialogs, it also allows us to use a routable approach! Excellent!<br>So let’s add it to our <code>package.json</code> by running:</p>
+<p>It works, but it’s just simple page.<br>There is a great addon for modals dialogs, it also allows to use routable approach! Excellent!<br>So let’s add it to our <code>package.json</code> by running:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ember install ember-modal-dialog</span><br></pre></td></tr></table></figure>
 
 <p><code>app/styles/app.scss</code></p>
@@ -598,23 +739,23 @@ ga('send', 'pageview');
 <p>Now, let’s modify our test a little:</p>
 <p><code>tests/acceptance/search-test.js</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">test(<span class="string">'click on search link opens modal dialog'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  visit(<span class="string">'/'</span>);</span><br><span class="line">  click(<span class="string">'.navigation a#search'</span>);</span><br><span class="line"></span><br><span class="line">  andThen(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      assert.equal(currentURL(), <span class="string">'/search'</span>);</span><br><span class="line">      assert.equal(find(<span class="string">'.ember-modal-dialog h2'</span>).text(), <span class="string">'Fullscreen Search Page'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>It’s much better, we have the king of the routable modal.<br>However, this needs to be done to display it in fullscreen:</p>
+<p>It’s much better, we have the king of routable modal.<br>Hovewer, this need to be done to display it in fullscreen:</p>
 <p><code>app/components/full-screen-modal-dialog.coffee</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ModalDialog <span class="keyword">from</span> <span class="string">'ember-modal-dialog/components/modal-dialog.js'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> ModalDialog.extend(</span><br><span class="line">  containerClassNames: <span class="string">"full-screen-modal"</span>,</span><br><span class="line">  targetAttachment: <span class="string">"none"</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
 <p><code>app/styles/app.scss</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.full-screen-modal</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>And finally, in our template we do small change:</p>
+<p>And finally in our template we do small change:</p>
 <p><code>app/templates/search.hbs</code></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;#full-screen-modal-dialog&#125;&#125;</span><br><span class="line">  Fullscreen Screen Page </span><br><span class="line">&#123;&#123;/full-screen-modal-dialog&#125;&#125;</span><br></pre></td></tr></table></figure>
 
-<p>Let’s say, now we have fullscreen modal and some acceptance tests, which we can simply run in a browser by:</p>
+<p>Let’s say, now we have fullscreen modal and some acceptnace tests, which we can simply runned in a browser by:</p>
 <p><code>$ ember test --server --filter=&quot;search&quot;</code></p>
 <ul>
-<li>where <code>search</code> needs to be the module name or test name.</li>
+<li>where <code>search</code> need to be the module name or test name.</li>
 </ul>
-<p>That’s the first step. In the next post we will focus on extending functionality by building search form and list items using Ember components. We will provide some virtual backend to make it behaves like a real app.</p>
+<p>That’s first step. In the next post we will focus on extend functionality by building search form and list items using Ember components. We will provide some virtual backend to make it behaves as a real app.</p>
 <p>Stay tuned!</p>
 
       
@@ -676,10 +817,10 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_AUTHOR_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_AUTHOR_NAME&#x3D;&quot;James Bond&quot;; export GIT_AUTHOR_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
 
 <p>Then we have to push changes with force option:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -f origin branch_name</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -f origin branchname</span><br></pre></td></tr></table></figure>
 
-<p>Unfortunetelly, that’s not all. If we are using Github, we will most likely see something annoying. Commits would be marked with two avatars, and we would see something like “user a” committed with “user b”.<br>So, we should also take care of setting committer name similarly as we did before.</p>
-<p>That could be achieved by:</p>
+<p>Unfortunetelly, that’s not all. If we are using Github, we will most likely see something annoying. Commits would be marked with two avatars, and we would see something like “user a” commited with “user b”.<br>So, we should also take care of setting committer name similarly as we did before.</p>
+<p>That could be achived by:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_COMMITTER_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_COMMITTER_NAME&#x3D;&quot;James Bond&quot;; export GIT_COMMITTER_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
 
 <p>These commands are quite difficult to remember though, so I would suggest to put them into your <code>~/.aliases</code>:</p>
@@ -719,7 +860,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/best-practices/" rel="tag">best-practices</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/" rel="tag">command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/development/" rel="tag">development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ember/" rel="tag">ember</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nix/" rel="tag">nix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/" rel="tag">programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/" rel="tag">ruby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/single-page-application/" rel="tag">single-page-application</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tricks/" rel="tag">tricks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-development/" rel="tag">web-development</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/best-practices/" rel="tag">best-practices</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/coding/" rel="tag">coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/" rel="tag">command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/development/" rel="tag">development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ember/" rel="tag">ember</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/neovim/" rel="tag">neovim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nix/" rel="tag">nix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nvim/" rel="tag">nvim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/" rel="tag">programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python-django/" rel="tag">python django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/" rel="tag">ruby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/single-page-application/" rel="tag">single-page-application</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tricks/" rel="tag">tricks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-development/" rel="tag">web development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-framework/" rel="tag">web framework</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-development/" rel="tag">web-development</a></li></ul>
     </div>
   </div>
 
@@ -729,7 +870,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/best-practices/" style="font-size: 10px;">best-practices</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/development/" style="font-size: 10px;">development</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/ember/" style="font-size: 10px;">ember</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/nix/" style="font-size: 10px;">nix</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/single-page-application/" style="font-size: 10px;">single-page-application</a> <a href="/tags/tricks/" style="font-size: 10px;">tricks</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/web-development/" style="font-size: 10px;">web-development</a>
+      <a href="/tags/best-practices/" style="font-size: 10px;">best-practices</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/coding/" style="font-size: 10px;">coding</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/development/" style="font-size: 10px;">development</a> <a href="/tags/editor/" style="font-size: 20px;">editor</a> <a href="/tags/ember/" style="font-size: 10px;">ember</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/neovim/" style="font-size: 10px;">neovim</a> <a href="/tags/nix/" style="font-size: 10px;">nix</a> <a href="/tags/nvim/" style="font-size: 10px;">nvim</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/python-django/" style="font-size: 10px;">python django</a> <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/single-page-application/" style="font-size: 10px;">single-page-application</a> <a href="/tags/tricks/" style="font-size: 10px;">tricks</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/web-development/" style="font-size: 10px;">web development</a> <a href="/tags/web-framework/" style="font-size: 10px;">web framework</a> <a href="/tags/web-development/" style="font-size: 10px;">web-development</a>
     </div>
   </div>
 
@@ -755,19 +896,19 @@ ga('send', 'pageview');
           </li>
         
           <li>
+            <a href="/2020/04/05/python-django-as-my-next-framework/">Python/Django as a interesting alternative for Ruby on Rails</a>
+          </li>
+        
+          <li>
             <a href="/2019/01/29/vims-global-search-and-replace/">Vim`s global search and replace</a>
           </li>
         
           <li>
+            <a href="/2019/01/29/why-i-switched-to-nvim-in-2020/">Why I switched to nvim in 2020</a>
+          </li>
+        
+          <li>
             <a href="/2018/12/04/ruby-array-conversion-function/">Use Array() to array-ify inputs in Ruby</a>
-          </li>
-        
-          <li>
-            <a href="/2017/10/21/ember-location/">Redirect back with Ember.Location</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/19/desing-fullscreen-search-interface-part-3/">Desing Fullscreen Search Interface With Ember - Part 3</a>
           </li>
         
       </ul>
