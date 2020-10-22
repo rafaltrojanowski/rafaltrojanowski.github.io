@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112438069-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>My first dive into DDD concepts in Ruby | Rafal Trojanowski - Ruby on Rails Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Intro  For someone who is experiencing Rails fatigue, it would be worth looking into alternatives for developing architectures with Ruby. It does not mean that it would require abandoning Rails at all">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My first dive into DDD concepts in Ruby">
+<meta property="og:url" content="http://rafaltrojanowski.github.io/2020/10/21/my-first-dive-into-ddd-in-ruby/index.html">
+<meta property="og:site_name" content="Rafal Trojanowski - Ruby on Rails Developer">
+<meta property="og:description" content="Intro  For someone who is experiencing Rails fatigue, it would be worth looking into alternatives for developing architectures with Ruby. It does not mean that it would require abandoning Rails at all">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-21T12:40:11.735Z">
+<meta property="article:modified_time" content="2020-10-22T10:17:06.256Z">
+<meta property="article:author" content="Rafał Trojanowski">
+<meta property="article:tag" content="ruby on rails developer">
+<meta property="article:tag" content=" ruby on rails poland">
+<meta property="article:tag" content=" freelance ruby on rails developer">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Rafal Trojanowski - Ruby on Rails Developer" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Rafal Trojanowski - Ruby on Rails Developer</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Random tech notes from Freelance Ruby on Rails Developer</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://rafaltrojanowski.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-my-first-dive-into-ddd-in-ruby" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/21/my-first-dive-into-ddd-in-ruby/" class="article-date">
+  <time datetime="2020-10-21T12:40:11.735Z" itemprop="datePublished">2020-10-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      My first dive into DDD concepts in Ruby
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3>Intro</h3>
+
+<p>For someone who is experiencing Rails fatigue, it would be worth looking into alternatives for developing architectures with Ruby. It does not mean that it would require abandoning Rails at all because there are solutions that allow developing DDD concepts with the most popular Ruby framework. I will leave a discussion about whether you need this architecture approach in your app or not and only focus on how to start with DDD if you are not familiar with it.</p>
+<h2>Possible solutions</h2>
+
+<p>Based on my research, it looks like there are two possible ways to go with DDD in Ruby. The first one is Eventide with code examples available here: <a href="https://github.com/eventide-examples" target="_blank" rel="noopener">https://github.com/eventide-examples</a><br>These are pure Ruby examples. There is also the Eventide Rails project. However, not much is going there:<br><a href="https://github.com/eventide-project/eventide-rails" target="_blank" rel="noopener">https://github.com/eventide-project/eventide-rails</a><br>The second one is the Rails Event Store with a demo app: <a href="https://github.com/RailsEventStore/cqrs-es-sample-with-res" target="_blank" rel="noopener">https://github.com/RailsEventStore/cqrs-es-sample-with-res</a><br>It is integration with Rails, and a demo is also available on Heroku, which makes it very easy to play with it. </p>
+<p>After having a look into Eventide examples and the CQRS project, what is similar between them is the concept of Commands and Events. For someone familiar with Rails who want to get hands dirty with Domain-Driven Design,  I believe that the great place to start is cqrs-es-sample-with-res repo from Rails Event Store. So let’s have a look.</p>
+<h2>Rails Event Store</h2>
+
+<p>As you probably know from the previous section, the gem that brings all the necessary things to start the journey with Domain-Driven Design and Rails is called Rails Event Store.<br>The demo repo is actively maintained, consists of a use case of an e-commerce store with the implementation of around ten events that model business operations. For those who want to learn more, there are also Docs available here: <a href="https://railseventstore.org/" target="_blank" rel="noopener">https://railseventstore.org/</a></p>
+<p>I decided to run a demo project locally, generate some events, and then connect database GUI client to see how Events have been stored in the database and what’s going on with other data like typical Rails models. Later on, to fully understand how things work, I added my custom Event.</p>
+<h3>Adding custom event</h3>
+
+<h4> Step 1. Trigger command in Rails controller.</h4>
+
+<p>This part is easy. So here is where all the journey starts. I decided to add a tracking event when the user visits the Order page, so I need to call the following code in OrdersController#show action:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># app/controllers/orders_controller.rb</span></span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">show</span></span></span><br><span class="line">     @order       = Orders::Order.find(params[<span class="symbol">:id</span>])</span><br><span class="line">     @order_lines = Orders::OrderLine.where(<span class="symbol">order_uid:</span> @order.uid)</span><br><span class="line">+    command_bus.(Ordering::VisitOrder.new(<span class="symbol">order_uid:</span> @order.uid))</span><br><span class="line">   <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>The integration of this code with a controller requires changes in two other places. We need to register our command:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ordering/lib/ordering/visit_order.rb</span></span><br><span class="line">+<span class="class"><span class="keyword">module</span> <span class="title">Ordering</span></span></span><br><span class="line">+  <span class="class"><span class="keyword">class</span> <span class="title">VisitOrder</span> &lt; Command</span></span><br><span class="line">+    attribute <span class="symbol">:order_uid</span>, Types::UUID</span><br><span class="line">+  <span class="keyword">end</span></span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>To finalize this part, the configuration for our command bus is needed:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># config/initializers/rails_event_store.rb</span></span><br><span class="line">   Rails.configuration.command_bus.tap <span class="keyword">do</span> <span class="params">|bus|</span></span><br><span class="line">+    bus.register(Ordering::VisitOrder, Ordering::OnVisitOrder.new)</span><br><span class="line">   <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h4> Step 2. Command Handler.</h4>
+
+<p>The next step is to handle our Command in the following file:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ordering/lib/ordering/on_visit_order.rb</span></span><br><span class="line">+<span class="class"><span class="keyword">module</span> <span class="title">Ordering</span></span></span><br><span class="line">+  <span class="class"><span class="keyword">class</span> <span class="title">OnVisitOrder</span></span></span><br><span class="line">+    <span class="keyword">include</span> CommandHandler</span><br><span class="line">+</span><br><span class="line">+    <span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">(command)</span></span></span><br><span class="line">+      with_aggregate(Order, command.order_uid) <span class="keyword">do</span> <span class="params">|order|</span></span><br><span class="line">+        order.visit</span><br><span class="line">+      <span class="keyword">end</span></span><br><span class="line">+    <span class="keyword">end</span></span><br><span class="line">+  <span class="keyword">end</span></span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>The code above calls the Order#visit instance method, which implements the following code:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ordering/lib/ordering/order.rb</span></span><br><span class="line">+<span class="function"><span class="keyword">def</span> <span class="title">visit</span></span></span><br><span class="line">+  apply OrderVisited.new(<span class="symbol">data:</span> &#123;<span class="symbol">order_id:</span> @id&#125;)</span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h4> Step 3. The last part, Event.</h4>
+
+<p>And here is the moment where I got stuck for a moment. I got the following error:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Missing handler method apply_order_visited on aggregate Ordering::Order</span><br></pre></td></tr></table></figure>
+
+<p>Let’s fix it by adding the following code in the same file:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ordering/lib/ordering/order.rb</span></span><br><span class="line">+on OrderVisited <span class="keyword">do</span> <span class="params">|event|</span></span><br><span class="line">+  <span class="comment"># do nothing</span></span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>The last part is to handle our Event. To do this, we need to update our code in a few places. Add an Event:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ordering/lib/ordering/order_visited.rb</span></span><br><span class="line">+<span class="class"><span class="keyword">module</span> <span class="title">Ordering</span></span></span><br><span class="line">+  <span class="class"><span class="keyword">class</span> <span class="title">OrderVisited</span> &lt; Event</span></span><br><span class="line">+    attribute <span class="symbol">:order_id</span>, Types::UUID</span><br><span class="line">+  <span class="keyword">end</span></span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>Add subscription in config:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#config/initializers/rails_event_store.rb</span></span><br><span class="line">  Rails.configuration.event_store.tap <span class="keyword">do</span> <span class="params">|store|</span></span><br><span class="line">+    store.subscribe(Orders::OnOrderVisited, <span class="symbol">to:</span> [Ordering::OrderVisited])</span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>And the final part where the actual business logic happens is our read model. This read model is placed all together with other models like order or order_line (ActiveRecord):</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># app/read_models/orders/on_order_visited.rb</span></span><br><span class="line">+<span class="class"><span class="keyword">module</span> <span class="title">Orders</span></span></span><br><span class="line">+  <span class="class"><span class="keyword">class</span> <span class="title">OnOrderVisited</span></span></span><br><span class="line">+    <span class="function"><span class="keyword">def</span> <span class="title">call</span><span class="params">(event)</span></span></span><br><span class="line">+      order = Order.find_by(<span class="symbol">uid:</span> event.data[<span class="symbol">:order_id</span>])</span><br><span class="line">+</span><br><span class="line">+      order.visit_count += <span class="number">1</span></span><br><span class="line">+      order.save!</span><br><span class="line">+    <span class="keyword">end</span></span><br><span class="line">+  <span class="keyword">end</span></span><br><span class="line">+<span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h3>Conclusion</h3>
+
+<p>Because there is no Demo app for the Eventide project that shows how to integrate it with Rails, I decided to go with RES to learn more about DDD. For someone already familiar with DDD concepts, it would be good to give Eventide repo a shoot. Check this blog post for more info: <a href="https://blog.arkency.com/my-first-10-minutes-with-eventide/" target="_blank" rel="noopener">https://blog.arkency.com/my-first-10-minutes-with-eventide/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://rafaltrojanowski.github.io/2020/10/21/my-first-dive-into-ddd-in-ruby/" data-id="ckgko914500006irpaukd6lcn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/09/21/how-to-dockerize-rails-6-app/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">How to Dockerize Rails 6 App</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/best-practices/" rel="tag">best-practices</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/" rel="tag">command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/development/" rel="tag">development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker-compose/" rel="tag">docker-compose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ember/" rel="tag">ember</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nix/" rel="tag">nix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/" rel="tag">programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/" rel="tag">ruby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby-on-rails/" rel="tag">ruby on rails</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/single-page-application/" rel="tag">single-page-application</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tricks/" rel="tag">tricks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-development/" rel="tag">web-development</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/best-practices/" style="font-size: 10px;">best-practices</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/development/" style="font-size: 10px;">development</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/docker-compose/" style="font-size: 10px;">docker-compose</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/ember/" style="font-size: 10px;">ember</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/nix/" style="font-size: 10px;">nix</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/ruby-on-rails/" style="font-size: 10px;">ruby on rails</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/single-page-application/" style="font-size: 10px;">single-page-application</a> <a href="/tags/tricks/" style="font-size: 10px;">tricks</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/web-development/" style="font-size: 10px;">web-development</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/21/my-first-dive-into-ddd-in-ruby/">My first dive into DDD concepts in Ruby</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/21/how-to-dockerize-rails-6-app/">How to Dockerize Rails 6 App</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/05/surround-lines-with-quotes/">Surround lines with quotes</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/29/vims-global-search-and-replace/">Vim`s global search and replace</a>
+          </li>
+        
+          <li>
+            <a href="/2018/12/04/ruby-array-conversion-function/">Use Array() to array-ify inputs in Ruby</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Rafał Trojanowski<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
