@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://rafaltrojanowski.github.io/2020/11/03/visualize-four-types-of-joins-in-rails/</loc>
+    <loc>http://rafaltrojanowski.github.io/2020/12/02/vscode-code-snippets/</loc>
     
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/about/index.html</loc>
+    
+    <lastmod>2020-12-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2020/11/03/visualize-four-types-of-joins-in-rails/</loc>
     
     <lastmod>2020-11-03</lastmod>
     
@@ -88,7 +95,7 @@
 
   <url>
     <loc>http://rafaltrojanowski.github.io/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,161 +103,161 @@
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/git/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/tricks/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/code/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/best-practices/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ruby/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/nix/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/shell/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/command/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/web-development/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/vim/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/editor/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/development/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/programming/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ember/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/single-page-application/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ruby-on-rails/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/docker/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/docker-compose/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/rails/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ddd/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/event-sourcing/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/CQRS/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ruby-on-rails-sql-joins/</loc>
-    <lastmod>2020-11-03</lastmod>
+    <lastmod>2020-12-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
