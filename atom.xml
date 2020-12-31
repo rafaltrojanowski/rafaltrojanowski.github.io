@@ -6,7 +6,7 @@
   <link href="http://rafaltrojanowski.github.io/atom.xml" rel="self"/>
   
   <link href="http://rafaltrojanowski.github.io/"/>
-  <updated>2020-12-02T11:06:36.636Z</updated>
+  <updated>2020-12-31T10:12:39.563Z</updated>
   <id>http://rafaltrojanowski.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Building features for SaaS product in Elixir and Phoenix</title>
+    <link href="http://rafaltrojanowski.github.io/2020/12/31/building-features-for-saas-product-in-elixir-and-phoenix/"/>
+    <id>http://rafaltrojanowski.github.io/2020/12/31/building-features-for-saas-product-in-elixir-and-phoenix/</id>
+    <published>2020-12-31T09:28:28.000Z</published>
+    <updated>2020-12-31T10:12:39.563Z</updated>
+    
+    <content type="html"><![CDATA[<p>The inspiration to start this side-project came out from few facts:</p><ol><li>I have been inspired by what Chris Olivier makes for Ruby community. Expecially after listening to this podcast that I found on indiehackers.com: <a href="https://www.indiehackers.com/podcast/183-chris-oliver-of-gorails" target="_blank" rel="noopener">https://www.indiehackers.com/podcast/183-chris-oliver-of-gorails</a><br>While back I have seen a <strong>Jumpstart Rails</strong> Project: <a href="https://jumpstartrails.com/" target="_blank" rel="noopener">https://jumpstartrails.com/</a><br>which was something interesting, and I was wonderning how it has been build.</li><li>I’ve read this blog post: <a href="https://devblast.com/b/why-I-rebuilt-my-website-from-scratch-with-elixir-and-not-ruby" target="_blank" rel="noopener">https://devblast.com/b/why-I-rebuilt-my-website-from-scratch-with-elixir-and-not-ruby</a><br>In a nutshell the author says that we need to <strong>keep learnig new stuff</strong> or we stagnate. I totally agree with it. That’s why I decided to go with Elixir, instead of Ruby I don’t regret it. There were the moments of short frustration when I could not build something that fast as before, but overall it was interesting experience and learning opportunity that requires mindset shift - because Elixir is functional.</li><li><strong>ElixirCasts</strong> (<a href="https://elixircasts.io/" target="_blank" rel="noopener">https://elixircasts.io/</a>)<br>I bought an access a while ago, I wanted wrap up the knowledge that I got from the courses.</li></ol><h2>The good</h2>For the most boring parts that are required for almost every app I could find generators. I'm talking about <strong>phx_gen_auth</strong> and <strong>Torch</strong>.Thanks to that I could see new features quickly and I felt motivated to proceed.<p>The rest of the app was a fully customized and I had to reverse-engineer other apps, go through a few of blog posts or just simply hack something on my own and look for help in Github issues - standard. There is also <strong>Plausible</strong> repo on Github which comes handy when I want to check some implementation details. That’s how the inspiration for <code>Billing.active_subscription_for(user_id)</code> function came.</p><h2>What's new</h2>Elixir is quite fast. VSCode has a nice support for it! There is a nice podcast that I like to listen after coding called <strong>Thinking Elixir</strong>. I also joined Slack group and what's good I can see that there are new job offers popping out regullary so that's good trend. I also see that people are willing to help for those who got stuck with something and there is dedicated #beginners channel. That's pretty nice. There is also Elixir track on Exercism, and the hard quizes are really challanging but, this is probably topic for another post. What I found also interesting is the whole serie on how to build a <strong>Tetris with LiveView</strong> which is available on Groxio's Youtube channel: https://www.youtube.com/watch?v=8h8tWcz115M&list=PLKBMoE8mCkXi-sAkesjaUnDQqyrkAK8R5<p>Now the moment of self-promotion. If you want to visit effect of my 3-weeks work you can visit this URL:<br><a href="https://github.com/rafaltrojanowski/kickstart" target="_blank" rel="noopener">https://github.com/rafaltrojanowski/kickstart</a><br>I have also deployed the Demo to Heroku:<br><a href="https://kickstart-pro.herokuapp.com/" target="_blank" rel="noopener">https://kickstart-pro.herokuapp.com/</a><br>There is also Video Walkthrough if you want to see how it works:<br><a href="https://www.youtube.com/watch?v=Scl0UAd4c1E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Scl0UAd4c1E</a></p><p>I’m pretty sure that I will work on improving the code, adding new features and fixing issues in my free time. For now, let’s say that<br>the beta version of <strong>Phoenix Kickstart SaaS Template</strong> is ready.</p><p>Happy New Year!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;The inspiration to start this side-project came out from few facts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I have been inspired by what Chris Olivier makes for Rub</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Visual Studio Code - Code Snippets</title>
