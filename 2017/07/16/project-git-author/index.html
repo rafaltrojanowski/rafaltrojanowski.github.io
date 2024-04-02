@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Project Specific Git Author · Rafal Trojanowski - Ruby on Rails Developer</title><meta name="description" content="I'm remote Ruby on Rails Developer based in Poland"><meta name="og:title" content="Project Specific Git Author"><meta name="og:type" content="website"><meta name="og:url" content="http://rafaltrojanowski.github.io/2017/07/16/project-git-author/"><meta name="og:image" content="http://image.toast.com/aaaaahq/hola_cover.JPG"><meta name="og:description" content="I'm remote Ruby on Rails Developer based in Poland"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/chiangmai.css"><meta name="steem:author" content="@stunstunstun"><link rel="search" type="application/opensearchdescription+xml" href="http://rafaltrojanowski.github.io/atom.xml" title="Rafal Trojanowski - Ruby on Rails Developer"><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Rafal Trojanowski - Ruby on Rails Developer" type="application/atom+xml">
+</head><body class="post"><div id="fb-root"></div><div class="wrap"><header><nav class="navi-post"><a class="navi-post-back" href="javascript:history.back()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a><a class="navi-post-home" href="/"><i class="fa fa-home" aria-hidden="true"></i></a></nav></header><main class="post"><div class="post"><article class="post-block"><h1 class="post-title">Project Specific Git Author</h1><div class="post-info"><div class="post-info-profile"><a href="https://github.com/rafaltrojanowski" target="_blank"><img src="/image/rt-avatar.jpg"></a></div><div class="post-info-details"><div class="post-categories"></div><div class="post-date">Jul 16, 2017</div></div></div><div class="post-share"><div class="fb-like" data-href="http://rafaltrojanowski.github.io/2017/07/16/project-git-author/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false">                 </div><div class="fb-share-button" data-href="http://rafaltrojanowski.github.io/2017/07/16/project-git-author/" data-layout="button" data-size="small" data-mobile-iframe="true"></div></div><div class="post-content"><p>Have you ever wondered how to manage two or more Github accounts on your machine?</p>
+<p>If so, that must be something for you.</p>
+<h3 id="Project-specific-git-author"><a href="#Project-specific-git-author" class="headerlink" title="Project specific git author"></a>Project specific git author</h3><p>Let’s assume we want to manage James Bond’s accounts with following emails:</p>
+<ul>
+<li><a href="mailto:james@home.dev">james@home.dev</a></li>
+<li><a href="mailto:james@work.dev">james@work.dev</a></li>
+</ul>
+<p>We can configure an alias for second account by running:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.workprofile &#39;config user.email &quot;james@work.dev&quot;&#39;</span><br></pre></td></tr></table></figure>
+
+<p>Behind the scene, it adds additional alias in <code>~/.gitconfig</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[alias]</span><br><span class="line">  workprofile &#x3D; config user.email \&quot;james@work.dev\&quot;\n</span><br></pre></td></tr></table></figure>
+
+<p>After cloning repo, first thing we have to remember to do is running:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git workprofile</span><br></pre></td></tr></table></figure>
+
+<p>It simply configures the project to use workprofile’s email, by writing into <code>.git/config</code> in the repository following setting:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">  email &#x3D; james@work.dev</span><br></pre></td></tr></table></figure>
+
+<p>Now Git sets the author of new commits accordingly. Cool!</p>
+<h3 id="Change-author-in-commits-history"><a href="#Change-author-in-commits-history" class="headerlink" title="Change author in commits history"></a>Change author in commits history</h3><p>Supposing that we have project with commits already messed up regarding author, happily they can be filtered and author can be changed, using following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_AUTHOR_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_AUTHOR_NAME&#x3D;&quot;James Bond&quot;; export GIT_AUTHOR_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
+
+<p>Then we have to push changes with force option:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -f origin branch_name</span><br></pre></td></tr></table></figure>
+
+<p>Unfortunetelly, that’s not all. If we are using Github, we will most likely see something annoying. Commits would be marked with two avatars, and we would see something like “user a” committed with “user b”.<br>So, we should also take care of setting committer name similarly as we did before.</p>
+<p>That could be achieved by:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git filter-branch --commit-filter &#39;if [ &quot;$GIT_COMMITTER_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_COMMITTER_NAME&#x3D;&quot;James Bond&quot;; export GIT_COMMITTER_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;</span><br></pre></td></tr></table></figure>
+
+<p>These commands are quite difficult to remember though, so I would suggest to put them into your <code>~/.aliases</code>:</p>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias authorwork&#x3D;&#39;git filter-branch --commit-filter &#39;&quot;&#39;&quot;&#39;if [ &quot;$GIT_AUTHOR_NAME&quot; &#x3D; &quot;James Bond&quot; ]; then export GIT_AUTHOR_NAME&#x3D;&quot;James Bond&quot;; export GIT_AUTHOR_EMAIL&#x3D;james@work.dev; fi; git commit-tree &quot;$@&quot;&#39;&quot;&#39;&quot;&#39;&#39;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Here small trick will be necessary to make it work - we need to wrap ‘ character into ‘“ “‘.</li>
+</ul>
+<p>That’s all!</p>
+</div></article></div></main><footer><div class="paginator"><a class="next" href="/2017/07/17/desing-fullscreen-search-interface/"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div><div class="copyright"><p>© 2012 - 2024 <a href="https://github.com/stunstunstun" target="_blank">Rafał Trojanowski</a>. Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/stunstunstun/hexo-theme-chiangmai" target="_blank">hexo-theme-chiangmai</a>.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-112438069-1','auto');ga('send','pageview');</script></body></html>

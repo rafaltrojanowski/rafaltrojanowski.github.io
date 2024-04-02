@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2020/10/21/my-first-dive-into-ddd-in-ruby/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/about/index.html</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2021/01/09/how-to-build-nested-form-ala-rails-with-phoenix-liveview/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2020/12/02/vscode-code-snippets/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2020/09/21/how-to-dockerize-rails-6-app/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2019/09/05/surround-lines-with-quotes/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2018/12/04/ruby-array-conversion-function/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2019/01/29/vims-global-search-and-replace/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2017/07/16/project-git-author/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2020/11/03/visualize-four-types-of-joins-in-rails/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2017/07/17/desing-fullscreen-search-interface/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2017/07/19/desing-fullscreen-search-interface-part-3/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2017/10/21/ember-location/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/2017/07/17/desing-fullscreen-search-interface-part-2/</loc>
+    
+    <lastmod>2021-06-24</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>http://rafaltrojanowski.github.io/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/programming/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/elixir/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/phoenix/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/live-view/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/nested-form/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/ember/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/single-page-application/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/ruby-on-rails/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/docker/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/docker-compose/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/ruby/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/rails/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/ddd/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/event-sourcing/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/CQRS/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/nix/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/shell/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/command/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/web-development/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/code/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/best-practices/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/vim/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/editor/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/development/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/git/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/tricks/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/ruby-on-rails-sql-joins/</loc>
+    <lastmod>2024-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
