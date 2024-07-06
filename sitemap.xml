@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rafaltrojanowski.github.io/2024/06/20/full-text-search-with-elasticsearch-in-rails/</loc>
+    
+    <lastmod>2024-07-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://rafaltrojanowski.github.io/2020/10/21/my-first-dive-into-ddd-in-ruby/</loc>
     
     <lastmod>2024-04-03</lastmod>
@@ -292,6 +299,20 @@
   
   <url>
     <loc>http://rafaltrojanowski.github.io/tags/ruby-on-rails-sql-joins/</loc>
+    <lastmod>2024-07-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/elasticsearch/</loc>
+    <lastmod>2024-07-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rafaltrojanowski.github.io/tags/full-text-search/</loc>
     <lastmod>2024-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
